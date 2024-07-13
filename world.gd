@@ -11,7 +11,7 @@ func _ready():
 
 func generate_level():
 	var walker = Walker.new(Vector2(19, 11), borders)
-	var map = walker.walk(500)
+	var map = walker.walk(200)
 	walker.queue_free()
 	var cells = []
 	for location in map:
